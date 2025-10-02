@@ -340,9 +340,9 @@ display: block;
   /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-li img {
+ .portfolio-li img {
   height: 280px;
-}
+ } 
 
 /* .portfolio-li:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -805,7 +805,9 @@ background-color: #404bbf;
   background-color: #404bbf;
  } */
 @media screen and (min-width: 768px) {
-
+.portfolio-li img {
+  height: 300px;
+ } 
   .modal {
     width: 408px;
 min-height: 584px;
