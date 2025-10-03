@@ -112,14 +112,15 @@ display: block;
 } */
 .header-address-contact {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #434455;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .address {
   margin-left: auto;
   font-style: normal;
@@ -215,9 +216,7 @@ display: block;
 }
 
 .section-features {
-  /* padding: 120px 0; */
   padding: 96px 0;
-  padding-right: 16px;
 }
 
 .features-strategy {
@@ -274,7 +273,7 @@ display: block;
 } */
 .sectionthree {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .icon-list {
   display: flex;
@@ -291,6 +290,7 @@ display: block;
   background-color: #ffffff;
   align-items: center;
   flex-direction: column;
+  
   gap: 24px;
   /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
@@ -301,6 +301,7 @@ display: block;
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 .container-team {
   padding: 32px 0;
@@ -313,7 +314,7 @@ display: block;
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 .team-name {
   font-weight: 500;
@@ -387,7 +388,6 @@ display: block;
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 .portfolio-list {
@@ -411,7 +411,7 @@ display: block;
   border-top: none;
 }
 .sectionfour {
-  margin-bottom: 120px;
+ padding: 96px 0;
 }
 /* --------Footer---------- */
 
@@ -426,7 +426,6 @@ display: block;
   display: block;
   /* display: inline-block; */
   margin-bottom: 16px;
-  margin-top: 96px;
   text-align: center;
   
 }
@@ -544,7 +543,6 @@ letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
 text-align: center;
-margin-top: 72px;
 }
 
 /* .footer-button:hover {
@@ -557,6 +555,7 @@ margin-top: 72px;
 .footer-subs {
   margin-left: 80px;
   margin: auto;
+  margin-top: 72px;
 }
 .footer-input {
   border: 1px solid #fff;
@@ -614,8 +613,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 padding: 24px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-padding: 72px 24px 24px 24px;
-margin-bottom: 8px;
+padding: 72px 16px 24px 16px;
 }
 
 .modal-close {
@@ -665,7 +663,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
-margin-top: 24px;
 margin-bottom: 16px;
 }
 .modal-input {
@@ -738,6 +735,7 @@ border-color: #4D5AE5;
 }
 .modal-field-check {
   margin-bottom: 24px;
+
 }
 
 .modal-check-label {
@@ -747,8 +745,12 @@ line-height: 1.16;
 letter-spacing: 0.04em;
 color: #8e8f99;
 align-items: center;
+gap: 7.5px;
 line-height: 1.17;
 
+display: flex;
+  align-items: flex-start; 
+  gap: 8px; 
 }
 .modal-check-label a {
   line-height: 1.33;
@@ -772,10 +774,12 @@ line-height: 1.17;
   height: 16px;
   border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
-margin-right: 8px;
 fill: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
+flex-shrink: 0;
+/* margin: auto; */
+
 }
  .button-send {
   font-family: inherit;
@@ -792,10 +796,7 @@ display: inline-flex;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
-  margin-top: 48px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
-  margin-top: 24px;
  }
  /* .button-send:hover {
 background-color: #404bbf;
@@ -807,6 +808,7 @@ background-color: #404bbf;
 .portfolio-li img {
   height: 300px;
  } 
+ 
   .modal {
     width: 408px;
 min-height: 584px;
@@ -864,6 +866,13 @@ color: #404bbf;
 .header-address-contact:focus {
   color: #404bbf;
 }
+.header-address-contact {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #434455;
+}
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -895,16 +904,16 @@ color: #404bbf;
   margin: 0 auto;
   }
   .features-lists {
-    gap: 24px;
+    gap: 72px 24px;
   
   }
   .features-listt {
     width: calc((100% - 24px) / 2);
-    
+
   }
+ 
   .section-features {
     padding: 96px 0;
-    padding-right: 16px;
   }
   .features-strategy {
     font-weight: 700;
@@ -913,17 +922,18 @@ color: #404bbf;
   }
   .features-list {
     font-weight: 500;
-   
+  
   }
   .team-item {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
   .team-list {
-    gap: 24px;
+    gap: 64px 24px;
   justify-content: center;
   }
   .portfolio-li {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .portfolio-lists {
     column-gap: 24px;
@@ -947,7 +957,7 @@ margin: unset;
    flex-direction: row;
     gap: 72px 24px;
      width: 584px;
-      paddin: 0 16px;
+      padding: 0 16px;
 }
 
 .footer-button {
@@ -966,11 +976,17 @@ width: 264px;
   flex-direction: unset;
 }
   .footer-subs {
-    margin: unset;
+    margin: unset
   }
   .mobile-menu {
     display: none;
   }
+.sub-par-sub {
+  margin-bottom: 16px;
+}
+.modal-check-box {
+
+}
 }
   
   
@@ -980,6 +996,9 @@ width: 264px;
     width: 408px;
 min-height: 584px;
   }
+   .sectionfour {
+ padding: 120px 0;
+}
 .modal-close:hover {
   border: none;
   background-color: #404bbf;
@@ -1032,6 +1051,7 @@ margin-right: 76px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 400;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1073,7 +1093,6 @@ margin-right: 76px;
   color: #ffffff;
 }
   .features-lists {
-    padding: 120px 0;
     gap: 24px;
   }
   .features-listt {
@@ -1123,7 +1142,7 @@ margin-right: 76px;
 
 .footer-social {
 margin-top: unset;
-text-align: unset;
+  align-items: flex-start;
 }
 
 .container-footer {
@@ -1147,6 +1166,7 @@ justify-content: space-between;
 .sub-par-sub {
 margin: auto;
 text-align: unset;
+margin-bottom: 16px;
 }
 .footer-input {
 width: 264px;
